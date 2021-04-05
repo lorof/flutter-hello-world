@@ -19,12 +19,6 @@ class _PizzaDetailState extends State<PizzaDetail> {
 
     final Venue pizza = pizzasService.getPizzaDetail(widget.id).value;
 
-    print(pizzasService.getPizzaDetail(widget.id).value.address);
-    print(pizzasService.getPizzaDetail(widget.id).value.city);
-    print(pizzasService.getPizzaDetail(widget.id).value.country);
-    print(pizzasService.getPizzaDetail(widget.id).value.state);
-    print(pizzasService.getPizzaDetail(widget.id).value.name);
-
     return Layout(
         title: pizza.name,
         child: Container(
